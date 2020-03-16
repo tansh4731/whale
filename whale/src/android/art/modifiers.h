@@ -51,6 +51,8 @@ static constexpr uint32_t kAccDirectFlags = kAccStatic | kAccPrivate | kAccConst
 
 static constexpr uint32_t kAccPublicApi =             0x10000000;  // field, method
 static constexpr uint32_t kAccHiddenapiBits =         0x30000000;  // field, method
+// Android 10 or later.
+static constexpr uint32_t kAccFastInterpreterToInterpreterInvoke = 0x40000000;
 
 }  // namespace art
 }  // namespace whale
